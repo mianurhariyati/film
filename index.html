@@ -1,0 +1,193 @@
+<hmtl>
+	<head>
+		<title>CSS Website Layout</title>
+		<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body{
+			font-family: Arial;
+			padding: 10px;
+			background: lightyellow;
+			margin: 0;
+		}
+			/*style the header */
+			.header {
+				background-color: unset;
+				padding: 20px;
+				text-align: center;
+			}
+
+		.header{
+			padding: 30px;
+			text-align: center;
+			background: khaki;
+		}
+
+		/*Header/Blog/Tittle*/
+		.header {
+			padding: 30px;
+			color: black;
+			text-align: center;
+			background-image: url(latar.jpg);
+		}
+		.header h1 {
+			font-size: 50px;
+		}
+		.topnav {
+			overflow: hidden;
+			background-color: chocolate;
+		}
+		.topnav a{
+			float: left;
+			display: block;
+			color: blanchedalmond;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		/* change color on hover */
+		.topnav a:hover {
+			background-color: blanchedalmond;
+			color: black;
+		}
+
+
+		/* create two unequal columns that floats next to each other */
+		/* left column */
+		.leftcolumn {
+			float: left;
+			width: 75%;
+		}
+
+		/* right column */
+		.rightcolumn {
+			float: left;
+			width: 25%;
+			background-color: blanchedalmond;
+			padding-left: 20px;
+		}
+
+		/* fake image */
+		.fakeimg {
+			background-color: chocolate;
+			width: 100%;
+			padding: 20px;
+		}
+		/* add a card effect for articles */
+		.card {
+			background-color: khaki;
+			padding: 20px;
+			margin-top: 20px;
+		}
+
+		/* clear floats arter the columns */
+		.row: :after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		/* footer */
+		.footer {
+			padding: 20px;
+			text-align: center;
+			background: tan;
+			margin-top: 20px;
+		}
+
+		/* responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 800px) {
+			.leftcolumn, .rightcolumn {
+				width: 100%;
+				padding: 0;
+			}
+		}
+
+		/* responsive layout - when the screen is less than 400px, make the navigation links stack on of each other instead of next to each other */
+		@media screen and (max-width: 400px) {
+			.topnav a {
+				float: none;
+				width: 100%;
+			}
+		}
+
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<h1>film </h1>
+			<p>Cari dan Temukan film yang menarik </p>
+		</div>
+
+		<div class="topnav">
+			<a href="#">cartoon</a>
+			<a href="#">comedy </a>
+			<a href="#">romantic</a>
+<a href ="#" style="float:right">Etc</a>
+</div>
+		<div class="leftcolumn">
+			<div class="card">
+				<h2>pemandangan pejalanan</h2>
+				<h5>26 mei 2006</h5>
+				<img src="D:\mia nurhariyati\download.jpg" height="300px"width="100%">
+				<p>pemandangan perjalanan...</p>
+				<p>seorang pengemudi sedang melihat pemandangan.</p>
+			</div>
+			<div class="card">
+				<h2>pemandangan pantai</h2>
+				<h5>10 febuari, 2007</h5>
+				<img src="D:\mia nurhariyati\gambar.jpg" height="500px"width="100%">
+				<p>bersantai di pantai...</p>
+				<p>orang yang sedang menikmati suasana panati agar tubuh menjadi tenang.</p>
+			</div>
+			<div class="card">
+				<h2>pemandangan pantai</h2>
+				<h5>10 febuari, 2007</h5>
+				<img src="D:\mia nurhariyati\upin ipin.webp" height="500px"width="100%">
+				<p>Upin & Ipin adalah sebuah serial televisi animasi kartun anak-anak Malaysia yang dirilis pada tanggal 14 September 2007 yang ditayangkan di TV9, RTM2, MNCTV dan Kids TV, serta melalui layanan video streaming Disney+ Hotstar dan Netflix. </p>
+				
+			</div>
+	</div>
+	<div class="rightcolumn">
+		<div class="card">
+			<h2> About Me </h2>
+			<img src="D:\mia nurhariyati\cooky.jpg" height="300px"widht="100%">
+			<p> kartun yang lucu...</p>
+		</div>
+		<div class="card">
+			<h3>popular post</h3>
+			<div class="gallery">
+
+   					<a target="_blank" href="D:\mia nurhariyati\spongebop.jpeg"width="50%" height="100px">
+
+					<img src="D:\mia nurhariyati\spongebop.jpeg"width="100%" height="150px"></a>
+                  
+
+   					<a target="_blank" href="D:\mia nurhariyati\patrik.webp"width="100%" height="100px">
+
+					<img src="D:\mia nurhariyati\patrik.webp"width="100%" height="150px"></a>
+                   
+
+   					<a target="_blank" href="D:\mia nurhariyati\spongbop berpikir.jpg"width="100%" height="300px">
+
+					<img src="D:\mia nurhariyati\spongbop berpikir.jpg"width="100%" height="150px"></a>
+					
+   					<a target="_blank" href="D:\mia nurhariyati\mami pop.jpg"width="100%" height="300px">
+
+					<img src="D:\mia nurhariyati\mami pop.jpg"width="100%" height="150px"></a>
+                    </div>
+                   
+		</div>
+		<div class="card">
+			<h3>Follow Me</h3>
+			<p>mianrhryt10...</p>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<h2>Copyright &copy; 2024 ia nur</h2>
+</div>
+</body>
+	</html>
